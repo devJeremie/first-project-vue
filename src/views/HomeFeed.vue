@@ -1,7 +1,8 @@
 <template>
     <div>
-        <CardVideo v-for="video in videos" :key='video.id' :videoContent="video"/>
+        <CardVideo v-for="video in videos" :key='video.id' :videoInfo="video"/>
     </div>
+   
 </template>
 
 <script>
@@ -29,7 +30,7 @@
 
             fetch(url, options)
             .then((response) => response.json())
-            .then((data) => (this.videos = data))
+            .then((data) => (this.videos = data.contents))
             .catch((error) => console.error("Probleme with the fetch", error));
         },
     };
