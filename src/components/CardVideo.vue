@@ -1,12 +1,12 @@
 <template>
-    {{ video }}
+    {{ videoContent }}
 </template>
 
 <script>
     export default {
         name: "CardVideo",
         props: {
-            video: Object, //nom de la props qui sera un objet
+            videoContent: Object, //nom de la props qui sera un objet
         },
     }
 </script>

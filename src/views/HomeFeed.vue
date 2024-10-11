@@ -1,6 +1,6 @@
 <template>
     <div>
-        <CardVideo />
+        <CardVideo :videoContent="video"/>
     </div>
 </template>
 
@@ -11,6 +11,11 @@
         name: "HomeFeed",
         components: {
             CardVideo,
+        }, 
+        data() {
+            return {
+                video: "Voici la vidéo"
+            }
         }
-    }
+    };
 </script>
