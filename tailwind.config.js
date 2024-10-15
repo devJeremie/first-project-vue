@@ -3,7 +3,11 @@ module.exports = {
   purge: ['./src/**/*.vue'],  //n'importe quel fichier qui est dans src et qui finit par .vue
   content: [],
   theme: {
-    extend: {},
+    extend: {
+      fontSize: {
+        'xxs': '9px'
+      }
+    },
   },
   plugins: [],
 }
